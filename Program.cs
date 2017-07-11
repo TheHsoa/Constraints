@@ -1,29 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Constraints
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            int a = 1;
+            const int a = 1;
             string b = null;
 
-            Console.WriteLine(GetStringReference(a));
+            Console.WriteLine(GetStringReference(b));
             Console.WriteLine(GetStringValue(a));
 
             Console.WriteLine(GetStringReference(b));
-            Console.WriteLine(GetStringValue(b));
+            Console.WriteLine(GetStringValue(a));
 
             var array = ArrayExtensions.Generate<string>(5);
 
-            foreach (var t in array)
+            if (array.Any(t => t == null))
             {
-                if (t == null)
-                    throw new ArgumentNullException();
+                throw new ArgumentNullException();
             }
 
             var list = new List<int>();
@@ -31,17 +29,13 @@ namespace Constraints
 
         }
 
-        private static string GetStringReference<T>(T value)
+        private static string GetStringReference<T>(T value) where T : class 
         {
-            if (value == null)
-                return null;
-            return value.ToString();
+            return value?.ToString();
         }
 
-        private static string GetStringValue<T>(T value)
+        private static string GetStringValue<T>(T value) where T : struct 
         {
-            if (value == null)
-                return null;
             return value.ToString();
         }
 

@@ -5,3 +5,8 @@ D:\Обучение C#\Второй курс\Generics\Constraints\obj\Debug\Cons
 D:\Обучение C#\Второй курс\Generics\Constraints\obj\Debug\Constraints.pdb
 F:\Dropbox\Dropbox\Обучение\Второй курс\Generics\Constraints\obj\Debug\Constraints.exe
 F:\Dropbox\Dropbox\Обучение\Второй курс\Generics\Constraints\obj\Debug\Constraints.pdb
+D:\Домашки\Домашки C#\курс 2\HW1. Generics\Constraints\obj\Debug\Constraints.exe
+D:\Домашки\Домашки C#\курс 2\HW1. Generics\Constraints\obj\Debug\Constraints.pdb
+D:\Домашки\Домашки C#\курс 2\HW1. Generics\Constraints\bin\Debug\Constraints.exe
+D:\Домашки\Домашки C#\курс 2\HW1. Generics\Constraints\bin\Debug\Constraints.pdb
+D:\Домашки\Домашки C#\курс 2\HW1. Generics\Constraints\obj\Debug\Constraints.csprojResolveAssemblyReference.cache
